@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+}
+
+body {
+	display: flex;
+	background-color: #f1f1f1;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	width: 220px;
+	height: 400px;
+	background-color: white;
+}
+
+.content-container {
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+
+.top-container {
+	text-align: center;
+}
+
+.logo {
+	width: 50%;
+}
+
+.top-container > img {
+	margin-bottom: 30px;
+}
+
+.top-container > p {
+	font-size: 10px;
+	margin: 10px 0;
+}
+
+input[type='password'],
+input[type='email'] {
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	font-size: 8px;
+	width: 100%;
+	padding: 5px;
+}
+
+.check-container {
+	font-size: 10px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.check-container > input {
+	transform: scale(0.6);
+	margin-right: 3px;
+}
+
+input[type='submit'] {
+	width: 100%;
+	background-color: cornflowerblue;
+	border-radius: 3px;
+	border: none;
+	padding: 5px 0;
+	font-size: 8px;
+	color: white;
+}
+
+.pw-forgot {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.pw-forgot > a {
+	text-decoration: none;
+	color: grey;
+	font-size: 10px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+	.container {
+		box-shadow: 5px 3px 20px -3px #999;
+		height: 300px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 750px) {
+	.container {
+		width: 440px;
+		display: flex;
+	}
+
+	.content-container,
+	.img-container {
+		width: 50%;
+		height: 100%;
+	}
+
+	.img-container {
+		background-image: url('https://assets.codepen.io/6060109/worker.jpg');
+		background-size: 100%;
+	}
+}
